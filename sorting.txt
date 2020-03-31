@@ -1,0 +1,12 @@
+n=int(input())
+a=bin(n)[2:]
+k=[]
+str=""
+for i in a:
+    if i == '1':
+        str+=i
+    else:
+        k.append(str)
+        str=""
+k.sort(key=len,reverse=True)
+print(len(k[0]))
